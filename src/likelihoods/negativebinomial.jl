@@ -1,5 +1,5 @@
 """
-    NegativeBinomialLikelihood(r::Real=10.0, l::AbstractLink=ExpLink())
+    NegativeBinomialLikelihood(r::Real=2.0, l::AbstractLink=ExpLink())
 
 Negative binomial likelihood with number of successes defined as `r` and the probability of success in an individual trial defined as `p`.
 
@@ -14,7 +14,7 @@ struct NegativeBinomialLikelihood{T<:Real,Tl<:AbstractLink}
     invlink::Tl
 end
 
-NegativeBinomialLikelihood() = NegativeBinomialLikelihood(10.0)
+NegativeBinomialLikelihood() = NegativeBinomialLikelihood(2.0)
 
 NegativeBinomialLikelihood(r::Real) = NegativeBinomialLikelihood(r, ExpLink())
 
