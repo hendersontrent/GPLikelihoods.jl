@@ -17,6 +17,7 @@ using StatsFuns
         include(joinpath("likelihoods", "poisson.jl"))
         include(joinpath("likelihoods", "gamma.jl"))
         include(joinpath("likelihoods", "exponential.jl"))
+        include(joinpath("likelihoods", "negativebinomial.jl"))
     end
 
 end
