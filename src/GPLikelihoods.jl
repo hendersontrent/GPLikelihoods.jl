@@ -12,7 +12,8 @@ export BernoulliLikelihood,
     HeteroscedasticGaussianLikelihood,
     PoissonLikelihood,
     ExponentialLikelihood,
-    GammaLikelihood
+    GammaLikelihood,
+    NegativeBinomialLikelihood
 export Link,
     ChainLink,
     ExpLink,
@@ -36,5 +37,6 @@ include(joinpath("likelihoods", "gaussian.jl"))
 include(joinpath("likelihoods", "poisson.jl"))
 include(joinpath("likelihoods", "gamma.jl"))
 include(joinpath("likelihoods", "exponential.jl"))
+include(joinpath("likelihoods", "negativebinomial.jl"))
 
 end # module
