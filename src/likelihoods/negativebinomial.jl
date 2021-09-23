@@ -1,7 +1,7 @@
 """
     NegativeBinomialLikelihood(r::Real=1.0, l::AbstractLink=ExpLink())
 
-Negative binomial likelihood with number of successes defined as `r` and the probability of success in an individual trial defined as `p`.
+Negative binomial likelihood with fixed number of successes `r`.
 
 ```math
     p(y|p) = NegativeBinomial(y | r, l(p))
